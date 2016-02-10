@@ -1,0 +1,31 @@
+.a {
+	@for $i from 0 to $color-length {
+		$color: nth($colors, $i+1);
+		$color-name: nth($color-names, $i+1);
+
+		&-bg-color-#{$color-name} {
+			background-color: $color;
+		}
+
+		&-color-#{$color-name} {
+			color: $color;
+		}
+
+		&-bd-color-#{$color-name} {
+			border-color: $color;
+		}
+
+		&-bg-color-#{$color-name}-BANG {
+			background-color: $color !important;
+		}
+
+		&-color-#{$color-name}-BANG {
+			color: $color !important;
+		}
+
+		&-bd-color-#{$color-name}-BANG {
+			border-color: $color !important;
+		}
+
+	}
+}

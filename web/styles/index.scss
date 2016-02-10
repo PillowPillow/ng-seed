@@ -1,0 +1,13 @@
+@import '~npm/bourbon/app/assets/stylesheets/_bourbon.scss';
+@import '~stl/const.scss';
+@import '~stl/cleaners/_.scss';
+@import '~stl/attributes/_.scss';
+@import '~stl/components/_.scss';
+
+html, body {
+	padding: 0;
+	margin: 0;
+	background-color: $light-l;
+
+	font-family: $font-family;
+}

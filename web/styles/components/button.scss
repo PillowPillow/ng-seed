@@ -1,0 +1,35 @@
+.c-button {
+	@extend %button-cleaner;
+
+	@for $i from 0 to $btn-color-length {
+		$bg-color: nth($btn-bg-colors, $i+1);
+		$color: nth($btn-colors, $i+1);
+		$color-name: nth($btn-color-names, $i+1);
+
+		&.m-#{$color-name} {
+			color: $bg-color;
+			border-color: $bg-color;
+
+			&:hover {
+				color: $color;
+				background-color: darken($bg-color, 2);
+				border-color: darken($bg-color, 2);
+			}
+			&:active {
+				color: $color;
+				background-color: darken($bg-color, 4);
+				border-color: darken($bg-color, 4);
+			}
+		}
+	}
+
+	$default-color: nth($btn-color-names, 1);
+
+	padding: $spacing-sm $spacing-md;
+	border: 3px solid;
+	border-radius: 2px;
+	cursor: pointer;
+	@include transition(background-color .1s linear);
+
+	@extend .m-#{$default-color};
+}

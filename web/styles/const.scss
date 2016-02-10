@@ -1,0 +1,55 @@
+/*colors*/
+
+$primary: #141B23;
+$primary-l: lighten($primary, 5);
+$primary-d: darken($primary, 5);
+
+$secondary: #2E5E5F;
+$secondary-l: lighten($secondary, 5);
+$secondary-d: darken($secondary, 5);
+
+$accent: #f35e5c;
+$accent-l: lighten($accent, 5);
+$accent-d: darken($accent, 5);
+
+$success: #3adb76;
+$success-l: lighten($success, 5);
+$success-d: darken($success, 5);
+
+$light: #E6E6E6;
+$light-l: lighten($light, 5);
+$light-d: darken($light, 5);
+$light-dd: darken($light-d, 5);
+
+$colors: ($primary, $primary-l, $primary-d, $secondary, $secondary-l, $secondary-d, $accent, $accent-l, $accent-d, $success, $success-l, $success-d, $light, $light-l, $light-d, $light-dd);
+$color-names: (primary, primary-l, primary-d, secondary, secondary-l, secondary-d, accent, accent-l, accent-d, success, success-l, success-d, light, light-l, light-d, light-dd);
+$color-length: length($color-names);
+
+$btn-bg-colors: ($primary-l, $secondary-l, $accent);
+$btn-colors: ($light, $light, $light);
+$btn-color-names: (primary, secondary, accent);
+$btn-color-length: length($btn-color-names);
+
+/*font*/
+
+$font-family: 'Lato', sans-serif;
+
+/*spacing*/
+
+$spacing-xs: 8px;
+$spacing-sm: 16px;
+$spacing-md: 32px;
+$spacing-lg: 64px;
+
+/*sizing*/
+
+$size-ribbon: 64px;
+
+/*layers indexes*/
+
+$bg-layer: 0;
+$sheet-1-layer: 10;
+$sheet-2-layer: 20;
+$sheet-3-layer: 30;
+$sheet-4-layer: 40;
+$modal-layer: 50;

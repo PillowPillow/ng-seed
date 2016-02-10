@@ -1,0 +1,8 @@
+header, .c-header {
+	@extend %component;
+
+	background-color: $primary;
+	color: $primary-l;
+
+	min-height: $size-ribbon;
+}

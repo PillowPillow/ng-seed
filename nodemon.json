@@ -1,0 +1,6 @@
+{
+  "watch": [
+    ".tmp/server"
+  ],
+  "ext" : "js json html"
+}

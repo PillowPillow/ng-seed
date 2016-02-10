@@ -1,0 +1,8 @@
+sub-header, .c-sub-header {
+	@extend %component;
+
+	background-color: $primary-l;
+	color: $secondary-d;
+
+	min-height: $size-ribbon;
+}
